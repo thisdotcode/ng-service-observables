@@ -11,7 +11,9 @@ export class DisplayListComponent implements OnInit {
   constructor(private myListService: MyListService) {}
 
   ngOnInit() {
-    this.myListService.$listItem.subscribe((status) => {
+    // Subscribing to the observable $listItemChanged
+    this.myListService.$listItemChanged.subscribe((status) => {
+      // Accessing the updated listitems variable from service
       this.listItems = this.myListService.listItems;
     });
   }

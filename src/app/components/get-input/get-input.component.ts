@@ -26,6 +26,7 @@ export class GetInputComponent implements OnInit, AfterViewInit {
   }
 
   public addItem(): void {
+    // Setting value to listItems variable present in service
     this.myListService.setListItem(this.inputValue);
     this.resetInput();
   }
