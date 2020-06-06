@@ -7,7 +7,7 @@ import { MyListService } from 'src/app/services/my-list.service';
   styleUrls: ['./display-list.component.scss'],
 })
 export class DisplayListComponent implements OnInit {
-  listItems: string[];
+  listItems: string[] = [];
   constructor(private myListService: MyListService) {}
 
   ngOnInit() {
