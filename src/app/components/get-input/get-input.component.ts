@@ -5,7 +5,7 @@ import {
   ElementRef,
   OnInit,
 } from '@angular/core';
-import { MyListService } from 'src/app/services/my-list.service';
+import { MyListService } from '../../services/my-list.service';
 
 @Component({
   selector: 'app-get-input',
